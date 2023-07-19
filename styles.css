@@ -1,0 +1,77 @@
+.calculator{
+	position:absolute;
+	margin-top: 7%;
+	margin-left: 40%;
+	background:white;
+	border-radius:30px;
+}
+.keys{
+	background-color: rgb(240, 206, 206);
+	border-radius:10px;
+	width:350px;
+	height:400px;
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto auto;
+}
+body{
+	background-color: #000000;
+}
+.key{
+	width:50px;
+	height:50px;
+	border-radius:8px;
+	box-shadow: 5px 5px 10px #0000001a, -5px -5px 10px #000000;
+	color: #33e839;
+	font-weight: 800;
+	font-size:17px;
+	background-color: #020202;
+	border:3px solid #0d0d0d ;
+	cursor: pointer;
+	margin-left: 18px;
+	margin-top: 13px;
+}
+.keys .key:hover {
+	box-shadow: inset 0px 0px 8px #5b5b5b33;
+	}
+.keys .operator{
+	background-color:white;
+	border:3px solid white;
+	color:black;
+	font-size: 20px;
+	font-weight:5px;
+}
+.keys .action{
+	background-color:darkblue;
+	border:3px solid rgb(195, 225, 85);
+	color: #eb55e1;
+}
+.display{
+	width:300px;
+	height:100px;
+	padding:10px;
+	margin-left: 12px;
+	border-radius: 20px;
+	margin-bottom:20px;
+	margin-top:15px;
+	border:5px solid black;
+	overflow:auto;
+	background-color: #000000;
+}
+.display .input{
+	width:100%;
+	height:50%;
+	font-family: 'Kumar One', cursive;
+	font-size: 20px;
+	background-color: rgb(219, 159, 159);
+	overflow:auto;
+}
+.display .output{
+	width:100%;
+	height:50%;
+	font-size: 20px;
+	background-color: rgb(166, 177, 234);
+	white-space: nowrap;
+	font-family: 'Kumar One', cursive;
+	overflow:auto;
+}
